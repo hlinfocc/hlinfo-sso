@@ -1,0 +1,21 @@
+#应用名称，这个要和 Nacos 的 Data ID 前缀一致
+spring:
+  application:
+    name: ssoweb
+#配置中心的地址
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848
+        namespace: hlinfo-sso
+#配置以yaml/yml的形式（默认是 properties）
+        file-extension: yml
+#        group: DEFAULT_GROUP
+#注册中心的地址
+      discovery:
+        server-addr: 127.0.0.1:8848
+#限流监控中心
+#    sentinel:
+#      transport:
+#        dashboard: 127.0.0.1:8080
+#      eager: true
